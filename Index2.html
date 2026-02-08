@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yes or No</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+    }
+    button {
+      font-size: 24px;
+      padding: 10px 30px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>will you be ky valentine????????</h1>
+<button onclick="answer()">Get Answer</button>
+
+<h2 id="result"></h2>
+
+<script>
+function answer() {
+  const options = ["YES ✅", "NO ❌"];
+  document.getElementById("result").innerText =
+    options[Math.floor(Math.random() * options.length)];
+}
+</script>
+
+</body>
+</html>
